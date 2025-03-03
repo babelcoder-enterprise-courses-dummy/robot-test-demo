@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.10.5 on win32)" generated="2025-03-03T20:06:14.109228" rpa="false" schemaversion="5">
+<suite id="s1" name="For" source="C:\Projects\BabelCoder\robotframework\robot-shop\tests\demo\basic\for.robot">
+<test id="s1-t1" name="Test 1: FOR-IN - วนลูปผ่านรายการ" line="15">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.140783" level="INFO">Apple</msg>
+<arg>${fruit}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.140783" elapsed="0.000000"/>
+</kw>
+<var name="${fruit}">Apple</var>
+<status status="PASS" start="2025-03-03T20:06:14.140783" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.141783" level="INFO">Banana</msg>
+<arg>${fruit}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.141783" elapsed="0.000000"/>
+</kw>
+<var name="${fruit}">Banana</var>
+<status status="PASS" start="2025-03-03T20:06:14.141783" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.141783" level="INFO">Orange</msg>
+<arg>${fruit}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.141783" elapsed="0.000000"/>
+</kw>
+<var name="${fruit}">Orange</var>
+<status status="PASS" start="2025-03-03T20:06:14.141783" elapsed="0.000000"/>
+</iter>
+<var>${fruit}</var>
+<value>@{fruits}</value>
+<status status="PASS" start="2025-03-03T20:06:14.139783" elapsed="0.002000"/>
+</for>
+<status status="PASS" start="2025-03-03T20:06:14.139783" elapsed="0.002000"/>
+</test>
+<test id="s1-t2" name="Test 2: FOR-IN-RANGE - วนลูปผ่านช่วงตัวเลข" line="20">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.143784" level="INFO">1</msg>
+<arg>${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.143784" elapsed="0.000000"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-03-03T20:06:14.143784" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.143784" level="INFO">2</msg>
+<arg>${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.143784" elapsed="0.000000"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-03-03T20:06:14.143784" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.143784" level="INFO">3</msg>
+<arg>${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.143784" elapsed="0.000000"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-03-03T20:06:14.143784" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.143784" level="INFO">4</msg>
+<arg>${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.143784" elapsed="0.000000"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-03-03T20:06:14.143784" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>${start}</value>
+<value>${end}</value>
+<status status="PASS" start="2025-03-03T20:06:14.142783" elapsed="0.001001"/>
+</for>
+<status status="PASS" start="2025-03-03T20:06:14.142783" elapsed="0.001001"/>
+</test>
+<test id="s1-t3" name="Test 3: FOR-IN-ENUMERATE - วนลูปพร้อมดึง index และค่า" line="25">
+<for flavor="IN ENUMERATE">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.146298" level="INFO">Index: 0, Fruit: Apple</msg>
+<arg>Index: ${index}, Fruit: ${fruit}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.146298" elapsed="0.000000"/>
+</kw>
+<var name="${index}">0</var>
+<var name="${fruit}">Apple</var>
+<status status="PASS" start="2025-03-03T20:06:14.146298" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.147294" level="INFO">Index: 1, Fruit: Banana</msg>
+<arg>Index: ${index}, Fruit: ${fruit}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.147294" elapsed="0.000000"/>
+</kw>
+<var name="${index}">1</var>
+<var name="${fruit}">Banana</var>
+<status status="PASS" start="2025-03-03T20:06:14.147294" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.147294" level="INFO">Index: 2, Fruit: Orange</msg>
+<arg>Index: ${index}, Fruit: ${fruit}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.147294" elapsed="0.000000"/>
+</kw>
+<var name="${index}">2</var>
+<var name="${fruit}">Orange</var>
+<status status="PASS" start="2025-03-03T20:06:14.147294" elapsed="0.000000"/>
+</iter>
+<var>${index}</var>
+<var>${fruit}</var>
+<value>@{fruits}</value>
+<status status="PASS" start="2025-03-03T20:06:14.146298" elapsed="0.000996"/>
+</for>
+<status status="PASS" start="2025-03-03T20:06:14.145288" elapsed="0.002006"/>
+</test>
+<test id="s1-t4" name="Test 4: FOR-IN-ZIP - วนลูปผ่านหลายรายการพร้อมกัน" line="30">
+<for flavor="IN ZIP">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.149295" level="INFO">Name: John, Age: 25</msg>
+<arg>Name: ${name}, Age: ${age}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.149295" elapsed="0.000000"/>
+</kw>
+<var name="${name}">John</var>
+<var name="${age}">25</var>
+<status status="PASS" start="2025-03-03T20:06:14.149295" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.150294" level="INFO">Name: Jane, Age: 30</msg>
+<arg>Name: ${name}, Age: ${age}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.149295" elapsed="0.000999"/>
+</kw>
+<var name="${name}">Jane</var>
+<var name="${age}">30</var>
+<status status="PASS" start="2025-03-03T20:06:14.149295" elapsed="0.000999"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.150294" level="INFO">Name: Doe, Age: 35</msg>
+<arg>Name: ${name}, Age: ${age}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.150294" elapsed="0.000000"/>
+</kw>
+<var name="${name}">Doe</var>
+<var name="${age}">35</var>
+<status status="PASS" start="2025-03-03T20:06:14.150294" elapsed="0.000506"/>
+</iter>
+<var>${name}</var>
+<var>${age}</var>
+<value>${names}</value>
+<value>${ages}</value>
+<status status="PASS" start="2025-03-03T20:06:14.149295" elapsed="0.001505"/>
+</for>
+<status status="PASS" start="2025-03-03T20:06:14.148294" elapsed="0.002506"/>
+</test>
+<test id="s1-t5" name="Test 5: FOR-IN เพื่อทำ Dictionary Iteration" line="35">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.151806" level="INFO">Key: name, Value: John</msg>
+<arg>Key: ${key}, Value: ${value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.151806" elapsed="0.000000"/>
+</kw>
+<var name="${key}">name</var>
+<var name="${value}">John</var>
+<status status="PASS" start="2025-03-03T20:06:14.151806" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.151806" level="INFO">Key: age, Value: 30</msg>
+<arg>Key: ${key}, Value: ${value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.151806" elapsed="0.000000"/>
+</kw>
+<var name="${key}">age</var>
+<var name="${value}">30</var>
+<status status="PASS" start="2025-03-03T20:06:14.151806" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T20:06:14.151806" level="INFO">Key: city, Value: New York</msg>
+<arg>Key: ${key}, Value: ${value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T20:06:14.151806" elapsed="0.000999"/>
+</kw>
+<var name="${key}">city</var>
+<var name="${value}">New York</var>
+<status status="PASS" start="2025-03-03T20:06:14.151806" elapsed="0.000999"/>
+</iter>
+<var>${key}</var>
+<var>${value}</var>
+<value>&amp;{user}</value>
+<status status="PASS" start="2025-03-03T20:06:14.151806" elapsed="0.000999"/>
+</for>
+<status status="PASS" start="2025-03-03T20:06:14.150800" elapsed="0.002005"/>
+</test>
+<status status="PASS" start="2025-03-03T20:06:14.111460" elapsed="0.041345"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="For" id="s1" pass="5" fail="0" skip="0">For</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

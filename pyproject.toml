@@ -1,0 +1,23 @@
+[project]
+name = "robot-shop"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Nuttavut Thongjor", email = "n.thongjor@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10, <4.0"
+dependencies = [
+    "robotframework (>=7.2.2,<8.0.0)",
+    "robotframework-databaselibrary (>=2.1.0,<3.0.0)",
+    "psycopg2 (>=2.9.10,<3.0.0)",
+    "robotframework-tidy (>=4.16.0,<5.0.0)",
+    "robotframework-requests (>=0.9.7,<0.10.0)",
+    "rpaframework (>=30.0.0,<31.0.0)",
+    "robotframework-datadriver[xls] (>=1.11.2,<2.0.0)",
+    "robotframework-browser (>=19.3.1,<20.0.0)",
+    "robotframework-appiumlibrary (>=2.1.0,<3.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
